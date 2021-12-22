@@ -1,4 +1,4 @@
-package models2
+package models
 
 // UUIDModel struct
 type UUIDModel struct {
