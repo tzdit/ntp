@@ -1,4 +1,4 @@
-package models2
+package models
 
 var (
 	UnexpError          = "Unexpected error occurred while processing your request."

@@ -1,4 +1,4 @@
-package models2
+package models
 
 import (
 	"github.com/labstack/echo/v4"
