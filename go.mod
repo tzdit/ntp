@@ -1,4 +1,4 @@
-module ntrp
+module github.com/tzdit/ntrp
 
 go 1.17
 
