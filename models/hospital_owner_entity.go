@@ -6,9 +6,9 @@ import (
 
 //HospitalOwner DataStructure
 type HospitalOwner struct {
-	ID          string    `json:"id,omitempty"`
-	Name        string    `json:"name"`
-	Description string    `json:"description"`
+	ID          string    `json:"id,omitempty" form:"id"`
+	Name        string    `json:"name" form:"name"`
+	Description string    `json:"description" form:"description"`
 	CreatedBy   string    `json:"created_by"`
 	CreatedAt   time.Time `json:"created_at,omitempty"`
 	UpdatedBy   string    `json:"updated_by"`

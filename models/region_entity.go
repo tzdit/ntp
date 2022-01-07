@@ -6,9 +6,9 @@ import (
 
 //Region DataStructure
 type Region struct {
-	ID        string    `json:"id,omitempty"`
-	Name      string    `json:"name"  validate:"required"`
-	Code      string    `json:"code" validate:"required"`
+	ID        string    `json:"id,omitempty" form:"id"`
+	Name      string    `json:"name"  validate:"required" form:"name"`
+	Code      string    `json:"code" validate:"required" form:"code"`
 	CreatedBy string    `json:"created_by"`
 	CreatedAt time.Time `json:"created_at,omitempty"`
 	UpdatedBy string    `json:"updated_by"`

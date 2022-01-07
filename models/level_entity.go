@@ -6,9 +6,9 @@ import (
 
 //LevelEntity DataStructure
 type LevelEntity struct {
-	ID          ID        `json:"id,omitempty"`
-	Name        string    `json:"name" validate:"required"`
-	Description string    `json:"description"`
+	ID          ID        `json:"id,omitempty" form:"id"`
+	Name        string    `json:"name" validate:"required" form:"name"`
+	Description string    `json:"description" form:"description"`
 	CreatedBy   int32     `json:"created_by"`
 	CreatedAt   time.Time `json:"created_at,omitempty"`
 	UpdatedAt   time.Time `json:"updated_at,omitempty"`

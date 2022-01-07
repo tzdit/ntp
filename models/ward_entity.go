@@ -6,11 +6,11 @@ import (
 
 //Ward DataStructure
 type Ward struct {
-	ID          string `json:"id,omitempty"`
-	DistrictID  string `json:"district_id"`
-	Name        string `json:"name"  validate:"required"`
-	Code        string `json:"code"`
-	Description string `json:"description"`
+	ID          string `json:"id,omitempty" form:"id"`
+	DistrictID  string `json:"district_id" form:"district_id"`
+	Name        string `json:"name"  validate:"required" form:"name"`
+	Code        string `json:"code" form:"code"`
+	Description string `json:"description" form:"description"`
 	District    *District
 	CreatedBy   string    `json:"created_by"`
 	CreatedAt   time.Time `json:"created_at,omitempty"`

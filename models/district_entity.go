@@ -6,11 +6,11 @@ import (
 
 //District DataStructure
 type District struct {
-	ID          string `json:"id,omitempty"`
-	RegionID    string `json:"region_id"`
-	Name        string `json:"name"  validate:"required"`
-	Code        string `json:"code"`
-	Description string `json:"description"`
+	ID          string `json:"id,omitempty" form:"id"`
+	RegionID    string `json:"region_id" form:"region_id"`
+	Name        string `json:"name"  validate:"required" form:"name"`
+	Code        string `json:"code" form:"code"`
+	Description string `json:"description" form:"description"`
 	Region      *Region
 	CreatedBy   string    `json:"created_by"`
 	CreatedAt   time.Time `json:"created_at,omitempty"`
