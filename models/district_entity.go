@@ -8,7 +8,7 @@ import (
 type District struct {
 	ID          string `json:"id,omitempty" form:"id"`
 	RegionID    string `json:"region_id" form:"region_id"`
-	Name        string `json:"name"  validate:"required" form:"name"`
+	Name        string `json:"name" form:"name" validate:"required"`
 	Code        string `json:"code" form:"code"`
 	Description string `json:"description" form:"description"`
 	Region      *Region
