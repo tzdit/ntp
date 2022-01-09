@@ -18,6 +18,7 @@ type Pac struct {
 	AcceptAnyDevice bool      `json:"accept_any_device" form:"accept_any_device"`
 	AutoDeleteStudy bool      `json:"auto_delete_study" form:"auto_delete_study"`
 	Enabled         bool      `json:"enabled" form:"enabled"`
+	Hospital        *Hospital
 	CreatedBy       string    `json:"created_by"`
 	CreatedAt       time.Time `json:"created_at,omitempty"`
 	UpdatedBy       string    `json:"updated_by"`
