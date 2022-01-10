@@ -2,5 +2,5 @@ package models
 
 // UUIDModel struct
 type UUIDModel struct {
-	ID string `validate:"required" json:"id"`
+	ID string `validate:"required" json:"id" form:"id"`
 }
