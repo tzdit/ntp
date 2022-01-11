@@ -7,7 +7,7 @@ import (
 //Series model struct
 type Series struct {
 	ID                           string    `json:"id" form:"id"`
-	StudyID                      string    `json:"study_id" form:"study_id"`
+	StudyId                      string    `json:"study_id" form:"study_id"`
 	SeriesNumber                 string    `json:"series_number" form:"series_number"`
 	Modality                     string    `json:"modality" form:"modality"`
 	SeriesInstanceUID            string    `json:"series_instance_uid" form:"series_instance_uid"`

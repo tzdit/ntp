@@ -7,7 +7,7 @@ import (
 //User defines class user data
 type User struct {
 	ID              string    `json:"id,omitempty" form:"id"`
-	HospitalID      string    `json:"hospital_id" form:"hospital_id" validate:"required"`
+	HospitalId      string    `json:"hospital_id" form:"hospital_id" validate:"required"`
 	Name            string    `json:"name" form:"name" validate:"required"`
 	Email           string    `json:"email" form:"email" validate:"required"`
 	EmailVerifiedAt time.Time `json:"email_verified_at,omitempty" form:"email_verified_at"`

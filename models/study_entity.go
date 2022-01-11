@@ -8,7 +8,7 @@ import (
 //Study model struct
 type Study struct {
 	ID                      string      `json:"id" form:"id"`
-	PatientID               string      `json:"patient_id" form:"patient_id"`
+	PatientId               string      `json:"patient_id" form:"patient_id"`
 	PatientUUID             string      `json:"patient_uuid" form:"patient_uuid"`
 	StudyInstanceUID        string      `json:"study_instance_uid" form:"study_instance_uid"`
 	StudyDescription        string      `json:"study_description" form:"study_description"`

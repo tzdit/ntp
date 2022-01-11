@@ -7,7 +7,7 @@ import (
 //Instance model struct
 type Instance struct {
 	ID              string    `json:"id" form:"id"`
-	SeriesID        string    `json:"series_id" form:"series_id"`
+	SeriesId        string    `json:"series_id" form:"series_id"`
 	SopUID          string    `json:"sop_uid" form:"sop_uid"`
 	SopCUID         string    `json:"sop_cuid" form:"sop_cuid"`
 	InstanceNumber  int32     `json:"instance_number" form:"instance_number"`
