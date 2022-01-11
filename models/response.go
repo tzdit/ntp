@@ -45,17 +45,17 @@ func ResponseErrorData(data interface{}, errMsg string) *ResponseDataModel {
 
 func JsonResponseMessage(message, controllerName string, isCreated, isDeleted bool) string {
 	if strings.Contains(strings.ToLower(message), strings.ToLower("Success")) {
-		if isCreated {
+		if isCreated == true {
 			message = controllerName + " created successfully"
-		} else if isDeleted {
+		} else if isDeleted == true {
 			message = controllerName + " deleted successfully"
 		}
 		message = controllerName + " updated successfully"
 		return message
 	} else {
-		if isCreated {
+		if isCreated == true {
 			message = "Error occurred. " + controllerName + " not created"
-		} else if isDeleted {
+		} else if isDeleted == true {
 			message = "Error occurred. " + controllerName + " not deleted"
 		}
 		message = "Error occurred. " + controllerName + " not updated"
