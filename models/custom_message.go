@@ -6,6 +6,8 @@ var (
 	LoginError          = "These credentials do not match our records."
 	ThrottleError       = "Too many login attempts. Please try again."
 	RecordNotFoundError = "Records not found."
+	ErrorOccurred       = "Error occurred. Please try again."
+	ErrorDecoding       = "Error occurred while decoding the response. Please try again."
 	Success             = "Success"
 	CreatedBy           = "1c80aff3-78ae-433f-ada4-53beca113d44"
 	ParseError          = "Error parsing date"
