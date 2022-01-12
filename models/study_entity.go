@@ -12,14 +12,14 @@ type Study struct {
 	StudyInstanceUID        string    `json:"study_instance_uid" form:"study_instance_uid"`
 	StudyDescription        string    `json:"study_description" form:"study_description"`
 	StudyDate               string    `json:"study_date" form:"study_date"`
-	StudyTime               time.Time `json:"study_time,omitempty" form:"study_time"`
+	StudyTime               string `json:"study_time,omitempty" form:"study_time"`
 	NumberRelatedSeries     int32     `json:"number_related_series" form:"number_related_series"`
 	NumberRelatedInstances  int32     `json:"number_related_instances" form:"number_related_instances"`
 	ReferringPhysiciansName string    `json:"referring_physicians_name" form:"referring_physicians_name"`
 	StudyNumber             string    `json:"study_number" form:"study_number"`
 	AccessionNumber         string    `json:"accession_number" form:"accession_number"`
 	ClinicalSummary         string    `json:"clinical_summary" form:"clinical_summary"`
-	ReportedDate            time.Time `json:"reported_datetime,omitempty" form:"reported_datetime"`
+	ReportedDate            string `json:"reported_datetime,omitempty" form:"reported_datetime"`
 	ReportedStatus          bool      `json:"reported_status" form:"reported_status"`
 	ReferralStatus          bool      `json:"referral_status" form:"referral_status"`
 	Patient                 *Patient
