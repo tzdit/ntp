@@ -11,7 +11,7 @@ type Patient struct {
 	PatientFirstName   string      `json:"pat_first_name" form:"pat_first_name"`
 	PatientMiddleName  string      `json:"pat_middle_name" form:"pat_middle_name"`
 	PatientLastName    string      `json:"pat_last_name" form:"pat_last_name"`
-	PatientBirthDate   time.Time `json:"pat_birth_date" form:"pat_birth_date"`
+	PatientBirthDate   string `json:"pat_birth_date" form:"pat_birth_date"`
 	PatientPhoneNumber string      `json:"pat_phone_number" form:"pat_phone_number"`
 	PatientAge         int32       `json:"pat_age" validate:"numeric" form:"pat_age"`
 	PatientAddress     string      `json:"pat_address" form:"pat_address"`
