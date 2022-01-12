@@ -7,9 +7,9 @@ import (
 //Device DataStructure
 type Device struct {
 	ID             string    `json:"id,omitempty" form:"id"`
-	DeviceTypeId   string    `json:"device_type_id" form:"device_type_id"`
+	DeviceTypeID   string    `json:"device_type_id" form:"device_type_id"`
 	DeviceTypeName string    `json:"device_type_name" form:"device_type_name"`
-	HospitalId     string    `json:"hospital_id" form:"hospital_id"`
+	HospitalID     string    `json:"hospital_id" form:"hospital_id"`
 	HospitalName   string    `json:"hospital_name" form:"hospital_name"`
 	Name           string    `json:"name" validate:"required" form:"name"`
 	AeTitle        string    `json:"ae_title" validate:"required" form:"ae_title"`

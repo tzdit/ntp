@@ -1,14 +1,15 @@
 package models
 
 import (
-	"github.com/jackc/pgtype"
 	"time"
+
+	"github.com/jackc/pgtype"
 )
 
 //Study model struct
 type Study struct {
 	ID                      string      `json:"id" form:"id"`
-	PatientId               string      `json:"patient_id" form:"patient_id"`
+	PatientID               string      `json:"patient_id" form:"patient_id"`
 	PatientUUID             string      `json:"patient_uuid" form:"patient_uuid"`
 	StudyInstanceUID        string      `json:"study_instance_uid" form:"study_instance_uid"`
 	StudyDescription        string      `json:"study_description" form:"study_description"`

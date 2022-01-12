@@ -7,7 +7,7 @@ import (
 //Pac model struct
 type Pac struct {
 	ID              string    `json:"id,omitempty" form:"id"`
-	HospitalId      string    `json:"hospital_id" form:"hospital_id"`
+	HospitalID      string    `json:"hospital_id" form:"hospital_id"`
 	Name            string    `json:"name" form:"name"`
 	IpAddress       string    `json:"ip_address" form:"ip_address"`
 	Port            int32     `json:"port" form:"port"`

@@ -7,7 +7,7 @@ import (
 //Ward DataStructure
 type Ward struct {
 	ID          string `json:"id,omitempty" form:"id"`
-	DistrictId  string `json:"district_id" form:"district_id"`
+	DistrictID  string `json:"district_id" form:"district_id"`
 	Name        string `json:"name"  validate:"required" form:"name"`
 	Code        string `json:"code" form:"code"`
 	Description string `json:"description" form:"description"`

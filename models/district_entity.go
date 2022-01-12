@@ -7,7 +7,7 @@ import (
 //District DataStructure
 type District struct {
 	ID          string `json:"id,omitempty" form:"id"`
-	RegionId    string `json:"region_id" form:"region_id"`
+	RegionID    string `json:"region_id" form:"region_id"`
 	Name        string `json:"name" form:"name" validate:"required"`
 	Code        string `json:"code" form:"code"`
 	Description string `json:"description" form:"description"`
