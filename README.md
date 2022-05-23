@@ -1,2 +1,2 @@
 # ntrp
-NTrP Models
+NTP Models
